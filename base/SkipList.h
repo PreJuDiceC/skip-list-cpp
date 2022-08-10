@@ -287,26 +287,18 @@ bool SkipList<K, V>::deleteElement(K key) {
 // 打印整个跳表
 template <typename K, typename V>
 void SkipList<K, V>::displayList() {
-#ifdef DEBUG
     std::cout << "display skipList : " << std::endl;
-#endif
 
     Node<K, V>* cur;
 
     for(int i = _curLevel; i >= 0; --i) {
         cur = _header->_forward[i];
-#ifdef DEBUG
         std::cout << "Level : " << i << ':' << std::endl;
-#endif
         while (cur != nullptr) {
-#ifdef DEBUG
             std::cout << cur->getKey() << ':' << cur->getValue() << ' ';
-#endif
             cur = cur->_forward[i];
         }
-#ifdef DEBUG
         std::cout << std::endl;
-#endif
     }
     return;
 }
