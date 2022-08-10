@@ -1,5 +1,1 @@
-# skip_list_cpp
-# skip_list_cpp
-# skip_list_cpp
-# skip_list_cpp
-# skip_list_cpp
+跳表是一种支持快速查找的数据结构，插入、查找和删除操作都仅仅只需要O(log n)对数级别的时间复杂度，实现比较简单。
